@@ -23,7 +23,7 @@ module.exports = function (_, options)
                                                 modules: {
                                                     localIdentName: isProd
                                                         ? "[sha1:hash:hex:5]"
-                                                        : "[name]-[local]",
+                                                        : "[name]_[local]"
                                                 },
                                                 importLoaders: 1,
                                                 onlyLocals: isServer,
