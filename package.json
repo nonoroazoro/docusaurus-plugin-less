@@ -1,0 +1,28 @@
+{
+    "name": "docusaurus-plugin-less",
+    "version": "1.0.0",
+    "author": "nonoroazoro",
+    "description": "Provides support for Less to Docusaurus v2.",
+    "main": "index.js",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nonoroazoro/docusaurus-plugin-less.git"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nonoroazoro/docusaurus-plugin-less/issues"
+    },
+    "homepage": "https://github.com/nonoroazoro/docusaurus-plugin-less#readme",
+    "keywords": [
+        "docusaurus",
+        "docusaurus-plugin",
+        "less"
+    ],
+    "dependencies": {
+        "less": "^3.11.3",
+        "less-loader": "^6.1.1"
+    },
+    "peerDependencies": {
+        "@docusaurus/core": "^2.0.0"
+    }
+}
