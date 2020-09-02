@@ -1,10 +1,11 @@
 const { name } = require("./package.json");
 
-module.exports = function (_, options)
+module.exports = function (context, options)
 {
+    const { id, ...pluginOptions } = options;
     return {
         name,
-        configureWebpack(_, isServer, utils)
+        configureWebpack(config, isServer, utils)
         {
             const { getStyleLoaders } = utils;
             const isProd = process.env.NODE_ENV === "production";
@@ -32,7 +33,7 @@ module.exports = function (_, options)
                                         ),
                                         {
                                             loader: "less-loader",
-                                            options: options || {}
+                                            options: pluginOptions || {}
                                         }
                                     ]
                                 },
@@ -41,7 +42,7 @@ module.exports = function (_, options)
                                         ...getStyleLoaders(isServer),
                                         {
                                             loader: "less-loader",
-                                            options: options || {}
+                                            options: pluginOptions || {}
                                         }
                                     ]
                                 }
