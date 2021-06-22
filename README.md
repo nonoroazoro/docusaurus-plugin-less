@@ -25,11 +25,19 @@
     ```diff
     module.exports = {
     // ...
-    + plugins: [require.resolve("docusaurus-plugin-less")],
+    + plugins: ["docusaurus-plugin-less"],
     // ...
     }
     ```
 
-    > Note that you have to use `require.resolve` due to the breaking change in [Docusaurus v2.0.0-alpha.56](https://github.com/facebook/docusaurus/releases/tag/v2.0.0-alpha.56).
+    or with `options`:
+
+    ```diff
+    module.exports = {
+    // ...
+    + plugins: ["docusaurus-plugin-less", { /* options */ sourceMap: false }],
+    // ...
+    }
+    ```
 
 3. Write and import your stylesheets in [Less](http://lesscss.org) as normal.

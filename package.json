@@ -1,6 +1,6 @@
 {
     "name": "docusaurus-plugin-less",
-    "version": "1.0.3",
+    "version": "2.0.0",
     "author": "nonoroazoro",
     "description": "Provides support for Less to Docusaurus v2.",
     "main": "index.js",
@@ -18,11 +18,9 @@
         "docusaurus-plugin",
         "less"
     ],
-    "dependencies": {
-        "less": "^3.12.2",
-        "less-loader": "^7.0.0"
-    },
     "peerDependencies": {
-        "@docusaurus/core": "^2.0.0"
+        "@docusaurus/core": ">=2.0.0",
+        "less-loader": ">=10.0.0",
+        "less": ">=4.0.0"
     }
 }

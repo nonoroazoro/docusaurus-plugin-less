@@ -27,7 +27,7 @@ module.exports = function (context, options)
                                                         : "[name]_[local]"
                                                 },
                                                 importLoaders: 1,
-                                                onlyLocals: isServer,
+                                                exportOnlyLocals: isServer,
                                                 sourceMap: !isProd
                                             }
                                         ),
