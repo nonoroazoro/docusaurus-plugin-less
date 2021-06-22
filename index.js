@@ -24,10 +24,10 @@ module.exports = function (context, options)
                                                 modules: {
                                                     localIdentName: isProd
                                                         ? "[sha1:hash:hex:5]"
-                                                        : "[name]_[local]"
+                                                        : "[name]_[local]",
+                                                    exportOnlyLocals: isServer
                                                 },
                                                 importLoaders: 1,
-                                                exportOnlyLocals: isServer,
                                                 sourceMap: !isProd
                                             }
                                         ),
